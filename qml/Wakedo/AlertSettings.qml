@@ -13,7 +13,7 @@ Rectangle{
     }   Text{
         id: buttonLabel2
         anchors.centerIn: parent
-        text: "Alert settings1"
+        text: ""
         font.family: "Centabel Book"
         font.bold: true
         font.pointSize: 20
