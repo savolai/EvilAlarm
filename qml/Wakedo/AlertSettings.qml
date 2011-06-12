@@ -8,7 +8,7 @@ Rectangle{
         color: "#ffffff"
         anchors.centerIn: parent
         text: "aaa"
-        font.family: "Centabel Book"
+        font.family: "Nokia Sans"
         font.bold: true
         font.pointSize: 20
         z:1;
@@ -16,7 +16,7 @@ Rectangle{
         id: buttonLabel2
         anchors.centerIn: parent
         text: ""
-        font.family: "Centabel Book"
+        font.family: "Nokia Sans"
         font.bold: true
         font.pointSize: 20
     }

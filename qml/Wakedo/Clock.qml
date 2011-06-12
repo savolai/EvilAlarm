@@ -144,7 +144,7 @@ Item {
         y: 50;
         //anchors.horizontalCenter: parent.horizontalCenter
         color: "white"
-        font.family: "Centabel Book"
+        font.family: "Nokia Sans"
         font.pixelSize: 100
         style: Text.Raised; styleColor: "grey"
     }
@@ -155,7 +155,7 @@ Item {
         text: "No alarms and no surprises"
         //anchors.horizontalCenter: parent.horizontalCenter
         color: "#555"
-        font.family: "Arial"
+        font.family: "Nokia Sans"
         font.pixelSize: 30
         //style: Text.Raised; styleColor: "white"
     }
