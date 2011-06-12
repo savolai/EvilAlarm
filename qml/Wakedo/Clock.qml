@@ -77,7 +77,8 @@ Item {
         }
 
         timeText.text = hoursPadded +":"+ minutesPadded +":"+ secondsPadded
-        dateText.text = date.getDate() +"."+  date.getMonth() +"."+  date.getFullYear();
+        // the date was too much
+        //dateText.text = date.getDate() +"."+  date.getMonth() +"."+  date.getFullYear();
         /// @todo get local date format
         //dateText.text = date.toDateString();
     }
@@ -140,7 +141,7 @@ Item {
     Text {
         id: timeText
         x: 240;
-        y: 30;
+        y: 50;
         //anchors.horizontalCenter: parent.horizontalCenter
         color: "white"
         font.family: "Centabel Book"
