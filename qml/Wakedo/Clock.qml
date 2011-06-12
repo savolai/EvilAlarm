@@ -42,7 +42,7 @@ import QtQuick 1.0
 
 Item {
     id: clock
-    width: 430; height: 200
+    width: 700; height: 300
 
     //property alias city: cityLabel.text
     property int hours
@@ -140,23 +140,23 @@ Item {
 
     Text {
         id: timeText
-        x: 220;
+        x: 310;
         y: 50;
         //anchors.horizontalCenter: parent.horizontalCenter
         color: "white"
         font.family: "Centabel Book"
-        font.pixelSize: 50
+        font.pixelSize: 100
         style: Text.Raised; styleColor: "grey"
     }
     Text {
         id: dateText
-        x: 220;
-        y: 110;
+        x: 310;
+        y: 160;
         text: "No alarms and no surprises"
         //anchors.horizontalCenter: parent.horizontalCenter
         color: "#555"
         font.family: "Arial"
-        font.pixelSize: 18
+        font.pixelSize: 30
         //style: Text.Raised; styleColor: "white"
     }
 }

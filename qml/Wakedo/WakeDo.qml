@@ -9,7 +9,7 @@ Flipable {
     property int yAxis: 0
     property int angle: 0
 
-    width: 550; height: 575
+    width: 800; height: 430
 
     front: TimeDisplay{}
     back: AlertSettings{}

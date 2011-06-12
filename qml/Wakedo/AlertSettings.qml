@@ -1,7 +1,7 @@
 import QtQuick 1.0
 import "../colibri"
 Rectangle{
-    width: 550; height: 575
+    width: 800; height: 430
     color: "grey"
     Text{
         id: buttonLabel
