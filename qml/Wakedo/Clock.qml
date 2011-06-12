@@ -76,7 +76,7 @@ Item {
             secondsPadded=seconds
         }
 
-        timeText.text = hoursPadded +":"+ minutesPadded +":"+ secondsPadded
+        timeText.text = hoursPadded +":"+ minutesPadded // SECONDS ARE DISTRACTING? +":"+ secondsPadded
         // the date was too much
         //dateText.text = date.getDate() +"."+  date.getMonth() +"."+  date.getFullYear();
         /// @todo get local date format
@@ -140,7 +140,7 @@ Item {
 
     Text {
         id: timeText
-        x: 340;
+        x: 350;
         y: 40;
         //anchors.horizontalCenter: parent.horizontalCenter
         color: "white"
@@ -150,7 +150,7 @@ Item {
     }
     Text {
         id: dateText
-        x: 340;
+        x: 350;
         y: 150;
         text: "No alarms and no surprises"
         //anchors.horizontalCenter: parent.horizontalCenter
