@@ -7,7 +7,7 @@ Rectangle{
         id: buttonLabel
         color: "#ffffff"
         anchors.centerIn: parent
-        text: "Alert settings"
+        text: ""
         font.family: "Centabel Book"
         font.bold: true
         font.pointSize: 20

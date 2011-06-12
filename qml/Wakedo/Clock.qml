@@ -78,6 +78,8 @@ Item {
 
         timeText.text = hoursPadded +":"+ minutesPadded +":"+ secondsPadded
         dateText.text = date.getDate() +"."+  date.getMonth() +"."+  date.getFullYear();
+        /// @todo get local date format
+        //dateText.text = date.toDateString();
     }
 
     Timer {
