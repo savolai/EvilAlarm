@@ -15,7 +15,9 @@ Flipable {
     back: AlertSettings{}
 
 
-    MouseArea { anchors.fill: parent; onClicked: clock.flipped = !clock.flipped }
+    MouseArea { anchors.fill: parent;
+        onClicked: clock.flipped = !clock.flipped
+    }
 
 
 //    state: "front"

@@ -17,5 +17,6 @@ Rectangle{
         font.family: "Centabel Book"
         font.bold: true
         font.pointSize: 20
-    }
+    }    Switch { anchors.centerIn: parent; on: false }
+
 }
