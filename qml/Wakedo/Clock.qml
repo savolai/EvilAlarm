@@ -140,12 +140,12 @@ Item {
 
     Text {
         id: timeText
-        x: 240;
+        x: 220;
         y: 50;
         //anchors.horizontalCenter: parent.horizontalCenter
         color: "white"
         font.family: "Centabel Book"
-        font.pixelSize: 40
+        font.pixelSize: 50
         style: Text.Raised; styleColor: "grey"
     }
     Text {

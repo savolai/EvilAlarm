@@ -2,7 +2,7 @@ import QtQuick 1.0
 
 Rectangle{
     width: 550; height: 575
-    color: "black"
+    color: "#333";
     Clock{        anchors.centerIn: parent
 }
 }
