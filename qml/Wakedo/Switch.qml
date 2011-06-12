@@ -63,7 +63,7 @@ Item {
         if (knob.x == 1) {
             if (toggleswitch.state == "off") return;
         }
-        if (knob.x == 115) {
+        if (knob.x == 118) {
             if (toggleswitch.state == "on") return;
         }
         toggle();
@@ -82,11 +82,11 @@ Item {
     Image {
         id: knob
         x: 1; y: 2
-        source: "knob.svg"
+        source: "metalball.png"
 
         MouseArea {
             anchors.fill: parent
-            drag.target: knob; drag.axis: Drag.XAxis; drag.minimumX: 1; drag.maximumX: 115
+            drag.target: knob; drag.axis: Drag.XAxis; drag.minimumX: 1; drag.maximumX: 118
             onClicked: toggle()
             onReleased: releaseSwitch()
         }
@@ -97,7 +97,7 @@ Item {
     states: [
         State {
             name: "on"
-            PropertyChanges { target: knob; x: 115 }
+            PropertyChanges { target: knob; x: 118 }
             PropertyChanges { target: toggleswitch; on: true }
         },
         State {

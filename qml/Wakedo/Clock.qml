@@ -42,7 +42,7 @@ import QtQuick 1.0
 
 Item {
     id: clock
-    width: 750; height: 330
+    width: 725; height: 430
 
     //property alias city: cityLabel.text
     property int hours
@@ -88,12 +88,12 @@ Item {
         onTriggered: clock.timeChanged()
     }
 
-    Image { id: background; source: "clock-large.png"; visible: clock.night == false }
-    Image { source: "clock-night-large.png"; visible: clock.night == true }
+    Image { id: background; source: "alarmclock-photo_invert_small.png"; visible: clock.night == false }
+    Image { source: "alarmclock-photo_invert_small.png"; visible: clock.night == true }
 
 
     Image {
-        x: 152.5; y: 87
+        x: 152.5; y: 187
         source: "hour.png"
         smooth: true
         transform: Rotation {
@@ -107,7 +107,7 @@ Item {
     }
 
     Image {
-        x: 153.5; y: 77
+        x: 153.5; y: 177
         source: "minute.png"
         smooth: true
         transform: Rotation {
@@ -121,7 +121,7 @@ Item {
     }
 
     Image {
-        x: 157.5; y: 80
+        x: 157.5; y: 180
         source: "second.png"
         smooth: true
         transform: Rotation {
@@ -141,7 +141,7 @@ Item {
     Text {
         id: timeText
         x: 350;
-        y: 40;
+        y: 90;
         //anchors.horizontalCenter: parent.horizontalCenter
         color: "white"
         font.family: "Nokia Sans"
@@ -150,8 +150,8 @@ Item {
     }
     Text {
         id: dateText
-        x: 350;
-        y: 150;
+        x: 355;
+        y: 200;
         text: "No alarms and no surprises"
         //anchors.horizontalCenter: parent.horizontalCenter
         color: "#555"

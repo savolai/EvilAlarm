@@ -19,7 +19,10 @@
    xml:space="preserve"
    id="svg2"
    inkscape:version="0.47 r22583"
-   sodipodi:docname="background.svg"><metadata
+   sodipodi:docname="background.svg"
+   inkscape:export-filename="/home/olli/Life/Projects/Wake-do/qml/Wakedo/background.png"
+   inkscape:export-xdpi="90.143906"
+   inkscape:export-ydpi="90.143906"><metadata
    id="metadata22"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
@@ -35,13 +38,14 @@
    inkscape:window-height="741"
    id="namedview20"
    showgrid="false"
-   inkscape:zoom="1"
-   inkscape:cx="119.60013"
-   inkscape:cy="185.46528"
-   inkscape:window-x="0"
-   inkscape:window-y="1"
+   inkscape:zoom="2"
+   inkscape:cx="124.20299"
+   inkscape:cy="76.979782"
+   inkscape:window-x="26"
+   inkscape:window-y="52"
    inkscape:window-maximized="0"
-   inkscape:current-layer="svg2" />
+   inkscape:current-layer="svg2"
+   inkscape:object-paths="false" />
 <defs
    id="defs4"><inkscape:perspective
    sodipodi:type="inkscape:persp3d"
@@ -93,7 +97,7 @@
    id="stop14" />
 	<stop
    offset="1"
-   style="stop-color:#828385"
+   style="stop-color:#2f2f30;stop-opacity:1;"
    id="stop16" />
 </linearGradient>
 <path
@@ -103,24 +107,28 @@
    sodipodi:nodetypes="ccccccccz" />
 <text
    xml:space="preserve"
-   style="font-size:40px;font-style:normal;font-weight:normal;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-   x="149"
+   style="font-size:40px;font-style:normal;font-weight:normal;fill:#690000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+   x="147"
    y="78.933243"
    id="text2830"><tspan
      sodipodi:role="line"
      id="tspan2832"
-     x="149"
+     x="147"
      y="78.933243">OFF</tspan></text>
+
+
 <text
    xml:space="preserve"
-   style="font-size:40px;font-style:normal;font-weight:normal;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-   x="24.269531"
+   style="font-size:40px;font-style:normal;font-weight:normal;fill:#004900;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+   x="33.269531"
    y="78.933243"
    id="text2830-9"><tspan
      sodipodi:role="line"
-     x="24.269531"
+     x="33.269531"
      y="78.933243"
      id="tspan2863">ON</tspan></text>
+
+
 <text
    xml:space="preserve"
    style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
@@ -129,5 +137,7 @@
    id="text2859"
    transform="translate(0,-2.988801e-6)"><tspan
      sodipodi:role="line"
-     id="tspan2861"></tspan></text>
+     id="tspan2861" /></text>
+
+
 </svg>

@@ -7,8 +7,8 @@ Rectangle{
     Text{
         id: buttonLabel
         x: 371
-        y: 324
-        color: "#535353"
+        y: 309
+        color: "#111111"
         text: "Alarm:"
         font.family: "DejaVu Sans Mono"
         font.bold: true
@@ -24,7 +24,7 @@ Rectangle{
     }
     Switch {
         x: 530
-        y: 290
+        y: 275
         width: 0
         height: 0
                 on: false;
@@ -48,4 +48,5 @@ Rectangle{
 //            Text { text: "Current item index: " + spinner.currentIndex }
         }
     }
+
 }
