@@ -1,16 +1,18 @@
 import QtQuick 1.0
 import "../colibri"
 Rectangle{
+    id: rectangle1
     width: 800; height: 430
     color: "#333";
     Text{
         id: buttonLabel
-        color: "#ffffff"
-        anchors.centerIn: parent
-        text: ""
-        font.family: "Nokia Sans"
+        x: 371
+        y: 324
+        color: "#535353"
+        text: "Alarm:"
+        font.family: "DejaVu Sans Mono"
         font.bold: true
-        font.pointSize: 20
+        font.pointSize: 35
         z:1;
     }   Text{
         id: buttonLabel2
@@ -21,7 +23,10 @@ Rectangle{
         font.pointSize: 20
     }
     Switch {
-                anchors.centerIn: parent;
+        x: 530
+        y: 290
+        width: 0
+        height: 0
                 on: false;
                 z: 0
         }
