@@ -2,7 +2,7 @@ import QtQuick 1.0
 
 Rectangle{
     id: window
-    width: 480; height: 320
+    width: 800; height: 400
 
     color: "lightGrey"
 

@@ -150,10 +150,11 @@ Item {
     }
     Text {
         id: dateText
-        x: 270;
-        y: 80;
+        x: 220;
+        y: 110;
+        text: "No alarms and no surprises"
         //anchors.horizontalCenter: parent.horizontalCenter
-        color: "grey"
+        color: "#555"
         font.family: "Arial"
         font.pixelSize: 18
         //style: Text.Raised; styleColor: "white"
