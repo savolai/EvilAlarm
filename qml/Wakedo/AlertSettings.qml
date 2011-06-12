@@ -5,11 +5,13 @@ Rectangle{
     color: "grey"
     Text{
         id: buttonLabel
+        color: "#ffffff"
         anchors.centerIn: parent
         text: "Alert settings"
         font.family: "Centabel Book"
         font.bold: true
         font.pointSize: 20
+        z:1;
     }   Text{
         id: buttonLabel2
         anchors.centerIn: parent
@@ -17,6 +19,6 @@ Rectangle{
         font.family: "Centabel Book"
         font.bold: true
         font.pointSize: 20
-    }    Switch { anchors.centerIn: parent; on: false }
+    }    Switch { anchors.centerIn: parent; on: false;z: 0 }
 
 }
