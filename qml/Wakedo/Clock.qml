@@ -88,8 +88,8 @@ Item {
         onTriggered: clock.timeChanged()
     }
 
-    Image { id: background; source: "alarmclock-photo_invert_small.png"; visible: clock.night == false }
-    Image { source: "alarmclock-photo_invert_small.png"; visible: clock.night == true }
+    Image { id: background; source: "alarmclock-photo_small.png"; visible: clock.night == false }
+    Image { source: "alarmclock-photo_small.png"; visible: clock.night == true }
 
 
     Image {
