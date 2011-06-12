@@ -15,8 +15,17 @@ Flipable {
     back: AlertSettings{}
 
 
-    MouseArea { anchors.fill: parent;
-        onClicked: wakeDo.flipped = !wakeDo.flipped
+    Image{
+        anchors.bottom: parent.bottom;
+        anchors.right: parent.right;
+        width:181;
+        height:130;
+        source: "TimeDisplayCorner.svg"
+        MouseArea {
+            anchors.fill: parent;
+            onClicked: wakeDo.flipped = !wakeDo.flipped
+        }
+
     }
 
 

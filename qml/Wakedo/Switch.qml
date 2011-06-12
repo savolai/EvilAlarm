@@ -63,7 +63,7 @@ Item {
         if (knob.x == 1) {
             if (toggleswitch.state == "off") return;
         }
-        if (knob.x == 78) {
+        if (knob.x == 115) {
             if (toggleswitch.state == "on") return;
         }
         toggle();
@@ -86,7 +86,7 @@ Item {
 
         MouseArea {
             anchors.fill: parent
-            drag.target: knob; drag.axis: Drag.XAxis; drag.minimumX: 1; drag.maximumX: 78
+            drag.target: knob; drag.axis: Drag.XAxis; drag.minimumX: 1; drag.maximumX: 115
             onClicked: toggle()
             onReleased: releaseSwitch()
         }
@@ -97,7 +97,7 @@ Item {
     states: [
         State {
             name: "on"
-            PropertyChanges { target: knob; x: 78 }
+            PropertyChanges { target: knob; x: 115 }
             PropertyChanges { target: toggleswitch; on: true }
         },
         State {

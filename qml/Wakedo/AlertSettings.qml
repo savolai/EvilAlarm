@@ -2,12 +2,12 @@ import QtQuick 1.0
 import "../colibri"
 Rectangle{
     width: 800; height: 430
-    color: "grey"
+    color: "#333";
     Text{
         id: buttonLabel
         color: "#ffffff"
         anchors.centerIn: parent
-        text: "aaa"
+        text: ""
         font.family: "Nokia Sans"
         font.bold: true
         font.pointSize: 20

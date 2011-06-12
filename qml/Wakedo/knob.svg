@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 13.0.2, SVG Export Plug-In  -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
@@ -11,16 +12,15 @@
    version="1.1"
    x="0px"
    y="0px"
-   width="52px"
-   height="52px"
-   viewBox="0 0 52 52"
+   width="126.89655"
+   height="124.98391"
+   viewBox="0 0 126.89656 124.98391"
    enable-background="new 0 0 52 52"
    xml:space="preserve"
    id="svg3883"
    sodipodi:version="0.32"
-   inkscape:version="0.44.1"
-   sodipodi:docname="knob_on.svg"
-   sodipodi:docbase="/local/axel/embeddedwidgets/embeddedstories/skins/svgslideswitch/MetallicBrush"><metadata
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="knob.svg"><metadata
    id="metadata4200"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
@@ -35,22 +35,30 @@
    bordercolor="#666666"
    pagecolor="#ffffff"
    id="base"
-   inkscape:zoom="8.3653846"
-   inkscape:cx="26.000002"
-   inkscape:cy="26"
+   inkscape:zoom="2.0913462"
+   inkscape:cx="35.590377"
+   inkscape:cy="41.228982"
    inkscape:window-x="0"
-   inkscape:window-y="0"
-   inkscape:current-layer="svg3883" />
+   inkscape:window-y="1"
+   inkscape:current-layer="svg3883"
+   showgrid="false"
+   inkscape:window-maximized="0" />
 <defs
-   id="defs3885">
+   id="defs3885"><inkscape:perspective
+   sodipodi:type="inkscape:persp3d"
+   inkscape:vp_x="0 : 26 : 1"
+   inkscape:vp_y="0 : 1000 : 0"
+   inkscape:vp_z="52 : 26 : 1"
+   inkscape:persp3d-origin="26 : 17.333333 : 1"
+   id="perspective169" />
 </defs>
 <linearGradient
    id="SVGID_1_"
    gradientUnits="userSpaceOnUse"
-   x1="-59.7866"
+   x1="-59.786598"
    y1="-115.917"
-   x2="-93.2123"
-   y2="-76.0818"
+   x2="-93.212303"
+   y2="-76.081802"
    gradientTransform="matrix(1,0,0,-1,102.5,-70)">
 	<stop
    offset="0.0056"
@@ -71,7 +79,7 @@
    sodipodi:cy="26"
    sodipodi:rx="26"
    sodipodi:ry="26"
-   transform="matrix(0.923077,0,0,0.923077,2,1.999996)" />
+   transform="scale(2.4403183,2.4035367)" />
 <linearGradient
    id="SVGID_2_"
    gradientUnits="userSpaceOnUse"
@@ -135,13 +143,13 @@
    sodipodi:cy="26"
    sodipodi:rx="24"
    sodipodi:ry="24"
-   transform="matrix(0.923077,0,0,0.923077,2,1.999996)" />
+   transform="scale(2.4403183,2.4035367)" />
 <linearGradient
    id="SVGID_3_"
    gradientUnits="userSpaceOnUse"
-   x1="-98.6328"
+   x1="-98.632797"
    y1="-96"
-   x2="-54.3672"
+   x2="-54.367199"
    y2="-96"
    gradientTransform="matrix(1,0,0,-1,102.5,-70)">
 	<stop
@@ -195,13 +203,13 @@
    sodipodi:cy="26"
    sodipodi:rx="22.132999"
    sodipodi:ry="22.132999"
-   transform="matrix(0.923077,0,0,0.923077,2,1.999996)" />
+   transform="scale(2.4403183,2.4035367)" />
 <linearGradient
    id="SVGID_4_"
    gradientUnits="userSpaceOnUse"
-   x1="-96.7671"
+   x1="-96.767097"
    y1="-96"
-   x2="-56.2324"
+   x2="-56.232399"
    y2="-96"
    gradientTransform="matrix(1,0,0,-1,102.5,-70)">
 	<stop
@@ -255,13 +263,13 @@
    sodipodi:cy="26"
    sodipodi:rx="20.267"
    sodipodi:ry="20.267"
-   transform="matrix(0.923077,0,0,0.923077,2,1.999996)" />
+   transform="scale(2.4403183,2.4035367)" />
 <linearGradient
    id="SVGID_5_"
    gradientUnits="userSpaceOnUse"
-   x1="-94.8999"
+   x1="-94.899902"
    y1="-96"
-   x2="-58.0996"
+   x2="-58.099602"
    y2="-96"
    gradientTransform="matrix(1,0,0,-1,102.5,-70)">
 	<stop
@@ -315,13 +323,13 @@
    sodipodi:cy="26"
    sodipodi:rx="18.4"
    sodipodi:ry="18.4"
-   transform="matrix(0.923077,0,0,0.923077,2,1.999996)" />
+   transform="scale(2.4403183,2.4035367)" />
 <linearGradient
    id="SVGID_6_"
    gradientUnits="userSpaceOnUse"
-   x1="-93.0332"
+   x1="-93.033203"
    y1="-96"
-   x2="-59.9668"
+   x2="-59.966801"
    y2="-96"
    gradientTransform="matrix(1,0,0,-1,102.5,-70)">
 	<stop
@@ -375,7 +383,7 @@
    sodipodi:cy="26"
    sodipodi:rx="16.533001"
    sodipodi:ry="16.533001"
-   transform="matrix(0.923077,0,0,0.923077,2,1.999996)" />
+   transform="scale(2.4403183,2.4035367)" />
 <linearGradient
    id="SVGID_7_"
    gradientUnits="userSpaceOnUse"
@@ -435,13 +443,13 @@
    sodipodi:cy="26"
    sodipodi:rx="14.667"
    sodipodi:ry="14.667"
-   transform="matrix(0.923077,0,0,0.923077,2,1.999996)" />
+   transform="scale(2.4403183,2.4035367)" />
 <linearGradient
    id="SVGID_8_"
    gradientUnits="userSpaceOnUse"
-   x1="-89.2998"
+   x1="-89.299797"
    y1="-96"
-   x2="-63.7002"
+   x2="-63.700199"
    y2="-96"
    gradientTransform="matrix(1,0,0,-1,102.5,-70)">
 	<stop
@@ -495,13 +503,13 @@
    sodipodi:cy="26"
    sodipodi:rx="12.8"
    sodipodi:ry="12.8"
-   transform="matrix(0.923077,0,0,0.923077,2,1.999996)" />
+   transform="scale(2.4403183,2.4035367)" />
 <linearGradient
    id="SVGID_9_"
    gradientUnits="userSpaceOnUse"
-   x1="-87.4331"
+   x1="-87.433098"
    y1="-96"
-   x2="-65.5664"
+   x2="-65.566399"
    y2="-96"
    gradientTransform="matrix(1,0,0,-1,102.5,-70)">
 	<stop
@@ -555,13 +563,13 @@
    sodipodi:cy="26"
    sodipodi:rx="10.933"
    sodipodi:ry="10.933"
-   transform="matrix(0.923077,0,0,0.923077,2,1.999996)" />
+   transform="scale(2.4403183,2.4035367)" />
 <linearGradient
    id="SVGID_10_"
    gradientUnits="userSpaceOnUse"
-   x1="-85.5659"
+   x1="-85.565903"
    y1="-96"
-   x2="-67.4336"
+   x2="-67.433601"
    y2="-96"
    gradientTransform="matrix(1,0,0,-1,102.5,-70)">
 	<stop
@@ -615,13 +623,13 @@
    sodipodi:cy="26"
    sodipodi:rx="9.066"
    sodipodi:ry="9.066"
-   transform="matrix(0.923077,0,0,0.923077,2,1.999996)" />
+   transform="scale(2.4403183,2.4035367)" />
 <linearGradient
    id="SVGID_11_"
    gradientUnits="userSpaceOnUse"
-   x1="-83.7002"
+   x1="-83.700203"
    y1="-96"
-   x2="-69.2998"
+   x2="-69.299797"
    y2="-96"
    gradientTransform="matrix(1,0,0,-1,102.5,-70)">
 	<stop
@@ -675,7 +683,7 @@
    sodipodi:cy="26"
    sodipodi:rx="7.1999998"
    sodipodi:ry="7.1999998"
-   transform="matrix(0.923077,0,0,0.923077,2,1.999996)" />
+   transform="scale(2.4403183,2.4035367)" />
 <linearGradient
    id="SVGID_12_"
    gradientUnits="userSpaceOnUse"
@@ -739,13 +747,13 @@
    sodipodi:cy="26"
    sodipodi:rx="5.3330002"
    sodipodi:ry="5.3330002"
-   transform="matrix(0.923077,0,0,0.923077,2,1.999996)" />
+   transform="scale(2.4403183,2.4035367)" />
 <linearGradient
    id="SVGID_13_"
    gradientUnits="userSpaceOnUse"
-   x1="-79.9658"
+   x1="-79.965797"
    y1="-96"
-   x2="-73.0342"
+   x2="-73.034203"
    y2="-96"
    gradientTransform="matrix(1,0,0,-1,102.5,-70)">
 	<stop
@@ -803,13 +811,13 @@
    sodipodi:cy="26"
    sodipodi:rx="3.4660001"
    sodipodi:ry="3.4660001"
-   transform="matrix(0.923077,0,0,0.923077,2,1.999996)" />
+   transform="scale(2.4403183,2.4035367)" />
 <linearGradient
    id="SVGID_14_"
    gradientUnits="userSpaceOnUse"
-   x1="-78.1001"
+   x1="-78.100098"
    y1="-96"
-   x2="-74.9004"
+   x2="-74.900398"
    y2="-96"
    gradientTransform="matrix(1,0,0,-1,102.5,-70)">
 	<stop
@@ -863,5 +871,5 @@
    sodipodi:cy="26"
    sodipodi:rx="1.6"
    sodipodi:ry="1.6"
-   transform="matrix(0.923077,0,0,0.923077,2,1.999996)" />
+   transform="scale(2.4403183,2.4035367)" />
 </svg>
