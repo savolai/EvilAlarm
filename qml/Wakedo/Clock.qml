@@ -42,7 +42,7 @@ import QtQuick 1.0
 
 Item {
     id: clock
-    width: 200; height: 230
+    width: 430; height: 200
 
     //property alias city: cityLabel.text
     property int hours
@@ -77,6 +77,7 @@ Item {
         }
 
         timeText.text = hoursPadded +":"+ minutesPadded +":"+ secondsPadded
+        dateText.text = date.getDate() +"."+  date.getMonth() +"."+  date.getFullYear();
     }
 
     Timer {
@@ -136,9 +137,22 @@ Item {
 
     Text {
         id: timeText
-        y: 200; anchors.horizontalCenter: parent.horizontalCenter
+        x: 240;
+        y: 30;
+        //anchors.horizontalCenter: parent.horizontalCenter
         color: "white"
-        font.bold: true; font.pixelSize: 24
-        style: Text.Raised; styleColor: "white"
+        font.family: "Centabel Book"
+        font.pixelSize: 40
+        style: Text.Raised; styleColor: "grey"
+    }
+    Text {
+        id: dateText
+        x: 270;
+        y: 80;
+        //anchors.horizontalCenter: parent.horizontalCenter
+        color: "grey"
+        font.family: "Arial"
+        font.pixelSize: 18
+        //style: Text.Raised; styleColor: "white"
     }
 }
