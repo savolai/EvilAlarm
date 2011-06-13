@@ -63,10 +63,9 @@ Rectangle{
                 focus: true
                 model: 24
                 itemHeight: 60
-                delegate: Text { font.pixelSize: 40; color:white; text: index; height: 30 }
+                delegate: Text { font.pixelSize: 40;  text: index; height: 30 }
             }
 
-        //Text { text: "Current item index: " + spinner.currentIndex }
         }
         Column {
             y: 80; x: 250; spacing: 40
@@ -76,7 +75,7 @@ Rectangle{
                 focus: true
                 model: 60
                 itemHeight: 60
-                delegate: Text { font.pixelSize: 40; color:white; text: index; height: 30 }
+                delegate: Text { font.pixelSize: 40;  text: index; height: 30 }
             }
         }
 
