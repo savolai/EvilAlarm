@@ -16,7 +16,59 @@ Rectangle{
             color: "#1c1c1c";
         }
     }
-    Clock{
+    Clock2{
         anchors.centerIn: parent
+    }
+
+    Text {
+        id: timeText
+        x: 390;
+        y: 90;
+        //anchors.horizontalCenter: parent.horizontalCenter
+        color: "white"
+        font.family: "Nokia Sans"
+        font.pixelSize: 100
+        style: Text.Raised; styleColor: "grey"
+    }
+    Text {
+        id: noAlarmText
+        x: 395;
+        y: 220
+        text: "No alarms and no surprises"
+        visible: true
+        //anchors.horizontalCenter: parent.horizontalCenter
+        color: "#555"
+        font.family: "Nokia Sans"
+        font.pixelSize: 30
+        //style: Text.Raised; styleColor: "white"
+    }
+
+    Rectangle {
+        id: alarmBox
+        x: 395
+        y: 203
+        width: 370
+        height: 64
+        color: "#00000000"
+        visible: false
+
+        Image {
+            id: image2
+            x: 0
+            y: 0
+            source: "Wakedo.png"
+        }
+
+        Text {
+            id: alarmText
+            x: 80
+            y: 17
+            color: "#c4c4c4"
+            text: "Alarm at 15:03"
+            visible: true
+            font.pixelSize: 30
+        font.family: "Nokia Sans"
+    }
+
     }
 }

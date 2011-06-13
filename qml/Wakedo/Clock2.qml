@@ -88,19 +88,19 @@ Item {
         onTriggered: clock.timeChanged()
     }
 
-    Image { id: background; source: "alarmclock-photo_small.png"; visible: clock.night == false }
-    Image { source: "alarmclock-photo_small.png"; visible: clock.night == true
+    Image { id: background; source: "anvil-clock-small-sans-anvil.png"; visible: clock.night == false }
+    Image { source: "anvil-clock-small-sans-anvil.png"; visible: clock.night == true
 
     Image {
         id: image1
         x: 133
-        y: 189
+        y: 176
         source: "clockscreen.svg"
     } }
 
 
     Image {
-        x: 154.5; y: 177
+        x: 154.5; y: 164
         source: "hour.svg"
         smooth: true
         transform: Rotation {
@@ -114,7 +114,7 @@ Item {
     }
 
     Image {
-        x: 156.5; y: 154
+        x: 156.5; y: 141
         source: "minute.svg"
         smooth: true
         transform: Rotation {
@@ -128,7 +128,7 @@ Item {
     }
 
     Image {
-        x: 157.5; y: 183
+        x: 157.5; y: 170
         fillMode: Image.PreserveAspectFit
         source: "second.png"
         smooth: true
@@ -142,9 +142,5 @@ Item {
         }
     }
 
-    Image {
-        anchors.centerIn: background; source: "center2.png"
-    }
 
 }
-
