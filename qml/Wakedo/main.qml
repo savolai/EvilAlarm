@@ -9,9 +9,8 @@ Rectangle{
 
     Row {
         anchors.centerIn: parent; spacing: 0
-        WakeDo { //image: "content/9_club.png";
+        WakeDo {
             angle: 180; yAxis: 1 }
-//Switch { anchors.centerIn: parent; on: false }
     }
 }
 

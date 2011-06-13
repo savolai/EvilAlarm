@@ -3,10 +3,25 @@ import "../colibri"
 Rectangle{
     id: rectangle1
     width: 800; height: 430
-    color: "#1c1c1c";
+    color: "#2e3442"
+    gradient: Gradient {
+        GradientStop {
+            position: 0.00;
+            color: "#3b3f49";
+        }
+        GradientStop {
+            position: 0.35;
+            color: "#1c1c1c";
+        }
+        GradientStop {
+            position: 1.00;
+            color: "#1c1c1c";
+        }
+    }
+    border.color: "black"
     Text{
         id: buttonLabel
-        x: 20
+        x: 26
         y: 20
         color: "#ffffff"
         text: "Alarm:"
