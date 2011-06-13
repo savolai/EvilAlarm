@@ -81,4 +81,16 @@ Rectangle{
 
     }
 
+    Text {
+        id: buttonLabel1
+        x: 118
+        y: 256
+        color: "#535353"
+        text: "Surprise: ?"
+        font.family: "Nokia Sans"
+        font.bold: true
+        font.pointSize: 20
+        z: 1
+    }
+
 }
