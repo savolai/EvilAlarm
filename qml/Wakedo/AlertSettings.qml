@@ -59,11 +59,11 @@ Rectangle{
 
             Spinner {
                 id: spinner
-                width: 220; height: 350
+                width: 220; height: 320
                 focus: true
                 model: 24
                 itemHeight: 60
-                delegate: Text { font.pixelSize: 40;  text: index; height: 30 }
+                delegate: Text { font.pixelSize: 45;  text: index; height: 30 }
             }
 
         }
@@ -71,11 +71,11 @@ Rectangle{
             y: 80; x: 250; spacing: 40
             Spinner {
                 id: spinner2
-                width: 220; height: 350
+                width: 220; height: 320
                 focus: true
                 model: 60
                 itemHeight: 60
-                delegate: Text { font.pixelSize: 40;  text: index; height: 30 }
+                delegate: Text { font.pixelSize: 45;  text: index; height: 30 }
             }
         }
 
