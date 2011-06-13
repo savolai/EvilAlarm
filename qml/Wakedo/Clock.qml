@@ -93,7 +93,7 @@ Item {
 
 
     Image {
-        x: 152.5; y: 187
+        x: 152.5; y: 190
         source: "hour.png"
         smooth: true
         transform: Rotation {
@@ -107,7 +107,7 @@ Item {
     }
 
     Image {
-        x: 153.5; y: 177
+        x: 153.5; y: 180
         source: "minute.png"
         smooth: true
         transform: Rotation {
@@ -121,7 +121,7 @@ Item {
     }
 
     Image {
-        x: 157.5; y: 180
+        x: 157.5; y: 183
         source: "second.png"
         smooth: true
         transform: Rotation {
