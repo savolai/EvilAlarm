@@ -63,7 +63,7 @@ Rectangle{
                 focus: true
                 model: 24
                 itemHeight: 60
-                delegate: Text { font.pixelSize: 45;  text: index; height: 30 }
+                delegate: Text { font.pixelSize: 45;  text: index; height: 60 }
             }
 
         }
@@ -75,7 +75,7 @@ Rectangle{
                 focus: true
                 model: 60
                 itemHeight: 60
-                delegate: Text { font.pixelSize: 45;  text: index; height: 30 }
+                delegate: Text { font.pixelSize: 45;  text: index; height: 60 }
             }
         }
 
