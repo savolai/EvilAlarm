@@ -1,16 +1,15 @@
-This package was debianized by Olli Savolainen <olli@unknown> on
+This package was debianized by Olli Savolainen <inbox@pilpi.net> on
 Sat, 11 Jun 2011 21:33:46 +0300.
 
-It was downloaded from <url://example.com>
+It was downloaded from <https://github.com/savolai/Wakedo>
 
 Upstream Author(s):
 
-    <put author's name and email here>
-    <likewise for another author>
+    Olli Savolainen <inbox@pilpi.net>
 
 Copyright:
 
-    <Copyright (C) YYYY Name OfAuthor>
+    Copyright (C) 2011 Olli Savolainen
     <likewise for another author>
 
 License:
@@ -32,7 +31,7 @@ License:
 On Debian systems, the complete text of the GNU General
 Public License can be found in `/usr/share/common-licenses/GPL'.
 
-The Debian packaging is (C) 2011, Olli Savolainen <olli@unknown> and
+The Debian packaging is (C) 2011, Olli Savolainen <inbox@pilpi.net> and
 is licensed under the GPL, see above.
 
 
