@@ -74,6 +74,8 @@ Item {
     Image {
         id: background
         source: "background.svg"
+        smooth:true
+
         MouseArea { anchors.fill: parent; onClicked: toggle()
 
         Text {
@@ -92,6 +94,7 @@ Item {
             fillMode: Image.PreserveAspectFit
             z: 92
             source: "Wakedo.png"
+
         }
 
         Text {
@@ -114,6 +117,7 @@ Item {
         x: 1; y: 2
         visible: true
         source: "metalball2.png"
+        smooth:true
 
         MouseArea {
             anchors.fill: parent

@@ -21,6 +21,7 @@ Flipable {
         width:197;
         height:140;
         source: "TimeDisplayCorner.svg"
+        smooth:true
         MouseArea {
             anchors.fill: parent;
             onClicked: wakeDo.flipped = !wakeDo.flipped
