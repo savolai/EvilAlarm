@@ -9,7 +9,7 @@ Rectangle{
 
     Row {
         anchors.centerIn: parent; spacing: 0
-        WakeDo {
+        Wakedo {
             angle: 180; yAxis: 1 }
     }
 }
