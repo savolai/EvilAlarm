@@ -17,7 +17,7 @@ Rectangle{
     }
     Switch {
         x: 15
-        y: 80
+        y: 98
         width: 0
         height: 0
                 on: false;

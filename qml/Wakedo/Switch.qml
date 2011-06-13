@@ -80,19 +80,31 @@ Item {
             id: text1
             x: 147
             y: 40
-            color: "#490606"
+            color: "#3e3d3d"
             text: "OFF"
             font.pixelSize: 41
         }
 
+        Image {
+            id: image1
+            x: 34
+            y: 8
+            fillMode: Image.PreserveAspectFit
+            z: 92
+            source: "Wakedo.png"
+        }
+
         Text {
             id: text2
-            x: 33
-            y: 40
-            color: "#055800"
+            x: 39
+            y: 59
+            color: "#b5b5b5"
             text: "ON"
+            visible: true
             font.pixelSize: 41
-        } }
+        }
+
+}
     }
 //![4]
 
@@ -100,6 +112,7 @@ Item {
     Image {
         id: knob
         x: 1; y: 2
+        visible: true
         source: "metalball2.png"
 
         MouseArea {

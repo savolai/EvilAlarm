@@ -157,14 +157,44 @@ Item {
         style: Text.Raised; styleColor: "grey"
     }
     Text {
-        id: dateText
+        id: noAlarmText
         x: 355;
-        y: 200;
+        y: 220
         text: "No alarms and no surprises"
+        visible: true
         //anchors.horizontalCenter: parent.horizontalCenter
         color: "#555"
         font.family: "Nokia Sans"
         font.pixelSize: 30
         //style: Text.Raised; styleColor: "white"
+    }
+
+    Rectangle {
+        id: alarmBox
+        x: 355
+        y: 203
+        width: 370
+        height: 64
+        color: "#00000000"
+        visible: false
+
+        Image {
+            id: image2
+            x: 0
+            y: 0
+            source: "Wakedo.png"
+        }
+
+        Text {
+            id: alarmText
+            x: 80
+            y: 17
+            color: "#c4c4c4"
+            text: "Alarm at 15:03"
+            visible: true
+            font.pixelSize: 30
+        font.family: "Nokia Sans"
+    }
+
     }
 }
