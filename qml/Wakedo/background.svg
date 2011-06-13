@@ -42,7 +42,7 @@
    inkscape:cx="124.20299"
    inkscape:cy="76.979782"
    inkscape:window-x="26"
-   inkscape:window-y="52"
+   inkscape:window-y="1"
    inkscape:window-maximized="0"
    inkscape:current-layer="svg2"
    inkscape:object-paths="false" />
@@ -105,28 +105,10 @@
    id="path18"
    style="fill:url(#SVGID_2_)"
    sodipodi:nodetypes="ccccccccz" />
-<text
-   xml:space="preserve"
-   style="font-size:40px;font-style:normal;font-weight:normal;fill:#690000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-   x="147"
-   y="78.933243"
-   id="text2830"><tspan
-     sodipodi:role="line"
-     id="tspan2832"
-     x="147"
-     y="78.933243">OFF</tspan></text>
 
 
-<text
-   xml:space="preserve"
-   style="font-size:40px;font-style:normal;font-weight:normal;fill:#004900;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-   x="33.269531"
-   y="78.933243"
-   id="text2830-9"><tspan
-     sodipodi:role="line"
-     x="33.269531"
-     y="78.933243"
-     id="tspan2863">ON</tspan></text>
+
+
 
 
 <text
@@ -138,6 +120,7 @@
    transform="translate(0,-2.988801e-6)"><tspan
      sodipodi:role="line"
      id="tspan2861" /></text>
+
 
 
 </svg>

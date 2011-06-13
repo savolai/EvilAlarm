@@ -3,50 +3,68 @@ import "../colibri"
 Rectangle{
     id: rectangle1
     width: 800; height: 430
-    color: "#333";
+    color: "#1c1c1c";
     Text{
         id: buttonLabel
-        x: 371
-        y: 309
-        color: "#111111"
+        x: 20
+        y: 20
+        color: "#ffffff"
         text: "Alarm:"
-        font.family: "DejaVu Sans Mono"
+        font.family: "Nokia Sans"
         font.bold: true
         font.pointSize: 35
         z:1;
-    }   Text{
-        id: buttonLabel2
-        anchors.centerIn: parent
-        text: ""
-        font.family: "Nokia Sans"
-        font.bold: true
-        font.pointSize: 20
     }
     Switch {
-        x: 530
-        y: 275
+        x: 15
+        y: 80
         width: 0
         height: 0
                 on: false;
                 z: 0
         }
     Rectangle {
-        width: 240; height: 320
+        x: 286
+        y: 0
+        width: 0; height: 0
+        Text{
+            id: buttonLabel2
+            x: 20
+            y: 20
+            color: "#ffffff"
+            text: "Alarm time:"
+            font.family: "Nokia Sans"
+            font.bold: true
+            font.pointSize: 35
+            z:1;
+        }
 
         Column {
-            y: 20; x: 20; spacing: 20
+            y: 80; x: 20; spacing: 40
 
             Spinner {
                 id: spinner
-                width: 200; height: 240
+                width: 220; height: 350
                 focus: true
-                model: 20
-                itemHeight: 30
-                delegate: Text { font.pixelSize: 25; text: index; height: 30 }
+                model: 24
+                itemHeight: 60
+                delegate: Text { font.pixelSize: 40; color:white; text: index; height: 30 }
             }
 
-//            Text { text: "Current item index: " + spinner.currentIndex }
+        //Text { text: "Current item index: " + spinner.currentIndex }
         }
+        Column {
+            y: 80; x: 250; spacing: 40
+            Spinner {
+                id: spinner2
+                width: 220; height: 350
+                focus: true
+                model: 60
+                itemHeight: 60
+                delegate: Text { font.pixelSize: 40; color:white; text: index; height: 30 }
+            }
+        }
+
     }
 
 }

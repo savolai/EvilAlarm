@@ -89,30 +89,37 @@ Item {
     }
 
     Image { id: background; source: "alarmclock-photo_small.png"; visible: clock.night == false }
-    Image { source: "alarmclock-photo_small.png"; visible: clock.night == true }
+    Image { source: "alarmclock-photo_small.png"; visible: clock.night == true
+
+    Image {
+        id: image1
+        x: 133
+        y: 189
+        source: "clockscreen.svg"
+    } }
 
 
     Image {
-        x: 152.5; y: 190
-        source: "hour.png"
+        x: 154.5; y: 177
+        source: "hour.svg"
         smooth: true
         transform: Rotation {
             id: hourRotation
-            origin.x: 7.5; origin.y: 73;
+            origin.x: 5; origin.y: 85;
             angle: (clock.hours * 30) + (clock.minutes * 0.5)
             Behavior on angle {
-                SpringAnimation { spring: 2; damping: 0.2; modulus: 360 }
+                SpringAnimation { spring: 15; damping: 6; modulus: 360 }
             }
         }
     }
 
     Image {
-        x: 153.5; y: 180
-        source: "minute.png"
+        x: 156.5; y: 154
+        source: "minute.svg"
         smooth: true
         transform: Rotation {
             id: minuteRotation
-            origin.x: 6.5; origin.y: 83;
+            origin.x: 5; origin.y: 107;
             angle: clock.minutes * 6
             Behavior on angle {
                 SpringAnimation { spring: 2; damping: 0.2; modulus: 360 }
@@ -122,6 +129,7 @@ Item {
 
     Image {
         x: 157.5; y: 183
+        fillMode: Image.PreserveAspectFit
         source: "second.png"
         smooth: true
         transform: Rotation {
@@ -129,13 +137,13 @@ Item {
             origin.x: 2.5; origin.y: 80;
             angle: clock.seconds * 6
             Behavior on angle {
-                SpringAnimation { spring: 2; damping: 0.2; modulus: 360 }
+                SpringAnimation { spring: 70; damping: 0.6; modulus: 360 }
             }
         }
     }
 
     Image {
-        anchors.centerIn: background; source: "center.png"
+        anchors.centerIn: background; source: "center2.png"
     }
 
     Text {

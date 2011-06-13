@@ -18,8 +18,8 @@ Flipable {
     Image{
         anchors.bottom: parent.bottom;
         anchors.right: parent.right;
-        width:181;
-        height:130;
+        width:197;
+        height:140;
         source: "TimeDisplayCorner.svg"
         MouseArea {
             anchors.fill: parent;

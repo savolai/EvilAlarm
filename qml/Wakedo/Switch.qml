@@ -74,7 +74,25 @@ Item {
     Image {
         id: background
         source: "background.svg"
-        MouseArea { anchors.fill: parent; onClicked: toggle() }
+        MouseArea { anchors.fill: parent; onClicked: toggle()
+
+        Text {
+            id: text1
+            x: 147
+            y: 40
+            color: "#490606"
+            text: "OFF"
+            font.pixelSize: 41
+        }
+
+        Text {
+            id: text2
+            x: 33
+            y: 40
+            color: "#055800"
+            text: "ON"
+            font.pixelSize: 41
+        } }
     }
 //![4]
 
@@ -82,7 +100,7 @@ Item {
     Image {
         id: knob
         x: 1; y: 2
-        source: "metalball.png"
+        source: "metalball2.png"
 
         MouseArea {
             anchors.fill: parent
