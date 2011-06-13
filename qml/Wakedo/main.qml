@@ -4,7 +4,7 @@ Rectangle{
     id: window
     width: 800; height: 430
 
-    color: "#c5c5c5"
+    color: "#1c1c1c"
 
 
     Row {

@@ -33,19 +33,22 @@ Flipable {
 
     states: State {
         name: "backstate"; when: wakeDo.flipped
-        PropertyChanges { target: rotation1; angle: wakeDo.angle }
+        PropertyChanges {
+            target: rotation1;
+            // this is negative to make rotation go reverse, i.e. to have paper fold approach user
+            angle: -wakeDo.angle }
     }
     transform: Rotation {
         id: rotation1; origin.x: wakeDo.width / 2; origin.y: wakeDo.height / 2
-        axis.x: wakeDo.xAxis; axis.y: wakeDo.yAxis; axis.z: 0
+        axis.x: wakeDo.xAxis; axis.y: wakeDo.yAxis;axis.z: 0.1;
     }
 
     transitions: Transition {
         ParallelAnimation {
             NumberAnimation { target: rotation1; properties: "angle"; duration: 600 }
             SequentialAnimation {
-                NumberAnimation { target: wakeDo; property: "scale"; to: 0.55; duration: 300 }
                 NumberAnimation { target: wakeDo; property: "scale"; to: 1.0; duration: 300 }
+                NumberAnimation { target: wakeDo; property: "scale"; to: 1.00; duration: 300 }
             }
         }
     }

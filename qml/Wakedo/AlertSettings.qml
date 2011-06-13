@@ -31,7 +31,7 @@ Rectangle{
         z:1;
     }
     Switch {
-        x: 15
+        x: 29
         y: 98
         width: 0
         height: 0
