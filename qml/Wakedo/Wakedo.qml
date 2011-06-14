@@ -41,7 +41,7 @@ Flipable {
     }
     transform: Rotation {
         id: rotation1; origin.x: wakeDo.width / 2; origin.y: wakeDo.height / 2
-        axis.x: wakeDo.xAxis; axis.y: wakeDo.yAxis;axis.z: 0.1;
+        axis.x: wakeDo.xAxis; axis.y: wakeDo.yAxis;axis.z: 0;
     }
 
     transitions: Transition {

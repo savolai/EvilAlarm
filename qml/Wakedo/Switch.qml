@@ -74,7 +74,6 @@ Item {
     Image {
         id: background
         source: "background.svg"
-        smooth:true
 
         MouseArea { anchors.fill: parent; onClicked: toggle()
 
@@ -117,7 +116,6 @@ Item {
         x: 1; y: 2
         visible: true
         source: "metalball2.png"
-        smooth:true
 
         MouseArea {
             anchors.fill: parent
