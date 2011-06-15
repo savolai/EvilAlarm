@@ -11,11 +11,11 @@ Rectangle{
         }
         GradientStop {
             position: 0.35;
-            color: "#1c1c1c";
+            color: "#131313";
         }
         GradientStop {
             position: 1.00;
-            color: "#1c1c1c";
+            color: "#131313";
         }
     }
     border.color: "black"
@@ -79,18 +79,6 @@ Rectangle{
             }
         }
 
-    }
-
-    Text {
-        id: buttonLabel1
-        x: 118
-        y: 256
-        color: "#535353"
-        text: "Surprise: ?"
-        font.family: "Nokia Sans"
-        font.bold: true
-        font.pointSize: 20
-        z: 1
     }
 
 }
