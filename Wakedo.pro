@@ -26,7 +26,8 @@ symbian:TARGET.UID3 = 0xEEC1EAC8
 # MOBILITY +=
 
 # The .cpp file which was generated for your project. Feel free to hack it.
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    mainwindow.cpp
 
 # Please do not modify the following two lines. Required for deployment.
 include(qmlapplicationviewer/qmlapplicationviewer.pri)
@@ -40,3 +41,9 @@ OTHER_FILES += \
     qtc_packaging/debian_fremantle/compat \
     qtc_packaging/debian_fremantle/changelog \
     README
+
+HEADERS += \
+    mainwindow.h
+
+FORMS += \
+    mainwindow.ui

@@ -1,14 +1,13 @@
 #include <QtGui/QApplication>
 #include "qmlapplicationviewer.h"
-
+#include "mainwindow.h"
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
 
-    QmlApplicationViewer viewer;
-    viewer.setOrientation(QmlApplicationViewer::ScreenOrientationAuto);
-    viewer.setMainQmlFile(QLatin1String("qml/Wakedo/main.qml"));
-    viewer.showExpanded();
+
+    MainWindow m;
+    m.show();
 
     return app.exec();
 }
