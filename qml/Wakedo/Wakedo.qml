@@ -4,19 +4,17 @@ Flipable {
     id: wakeDo
 
     //property alias image: frontImage.source
-    property bool flipped: false
     property int xAxis: 0
     property int yAxis: 0
     property int angle: 0
 
     width: 800; height: 430
 
-    front: TimeDisplay{}
+    front: TimeDisplay{id:timeDisplay}
     back: AlertSettings{}
 
-
     MouseArea {
-        onClicked: wakeDo.flipped = !wakeDo.flipped
+        onClicked: timeDisplay.flipped = !timeDisplay.flipped
         anchors.bottom: parent.bottom;
         anchors.right: parent.right;
         width:240;
@@ -27,7 +25,7 @@ Flipable {
 //    state: "front"
 
     states: State {
-        name: "backstate"; when: wakeDo.flipped
+        name: "backstate"; when: timeDisplay.flipped
         PropertyChanges {
             target: rotation1;
             // this is negative to make rotation go reverse, i.e. to have paper fold approach user
@@ -41,10 +39,10 @@ Flipable {
     transitions: Transition {
         ParallelAnimation {
             NumberAnimation { target: rotation1; properties: "angle"; duration: 600 }
-            SequentialAnimation {
+            /*SequentialAnimation {
                 NumberAnimation { target: wakeDo; property: "scale"; to: 1.0; duration: 300 }
                 NumberAnimation { target: wakeDo; property: "scale"; to: 1.00; duration: 300 }
-            }
+            }*/
         }
     }
 }
