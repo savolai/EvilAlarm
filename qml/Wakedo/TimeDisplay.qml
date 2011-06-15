@@ -34,7 +34,7 @@ Rectangle{
         id: noAlarmText
         x: 395;
         y: 220
-        text: "No alarms and no surprises"
+        text: "No alarm"
         visible: true
         //anchors.horizontalCenter: parent.horizontalCenter
         color: "#555"
