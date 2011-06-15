@@ -88,15 +88,16 @@ Item {
         onTriggered: clock.timeChanged()
     }
 
-    Image { id: background; source: "anvil-clock-small.png"; visible: clock.night == false }
-    Image { source: "anvil-clock-small.png"; visible: clock.night == true
+    Image { id: background; source: "anvil-clock-small-sans-anvil.png"; visible: clock.night == false }
+    Image { source: "anvil-clock-small-sans-anvil.png"; visible: clock.night == true
 
     Image {
         id: image1
         x: 133
         y: 176
         source: "clockscreen.svg"
-    } }
+    }
+    }
 
 
     Image {
