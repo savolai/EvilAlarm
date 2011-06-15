@@ -42,6 +42,20 @@ Rectangle{
         font.pixelSize: 30
         //style: Text.Raised; styleColor: "white"
     }
+    Image{
+        anchors.bottom: parent.bottom;
+        anchors.right: parent.right;
+        width:240;
+        height:150;
+        Image{
+            source:"bell.png"
+            x:160
+            y:67
+        }
+
+        source: "TimeDisplayCorner.svg"
+
+    }
 
     Rectangle {
         id: alarmBox

@@ -19,6 +19,22 @@ Rectangle{
         }
     }
     border.color: "black"
+
+    Image{
+        anchors.bottom: parent.bottom;
+        anchors.left: parent.left;
+        width:240;
+        height:150;
+        source: "AlertSettingsCorner.svg"
+        Image{
+            source:"ok.svg"
+            x:16
+            y:93
+        }
+
+
+    }
+
     Text{
         id: buttonLabel
         x: 26
@@ -37,6 +53,7 @@ Rectangle{
                 on: false;
                 z: 0
         }
+
     Rectangle {
         x: 286
         y: 0
