@@ -9,11 +9,11 @@ Rectangle{
         }
         GradientStop {
             position: 0.35;
-            color: "#1c1c1c";
+            color: "#131313";
         }
         GradientStop {
             position: 1.00;
-            color: "#1c1c1c";
+            color: "#131313";
         }
     }
     Clock2{
