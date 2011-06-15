@@ -18,10 +18,15 @@ Flipable {
     Image{
         anchors.bottom: parent.bottom;
         anchors.right: parent.right;
-        width:197;
-        height:140;
+        width:240;
+        height:150;
+        Image{
+            source:"bell.png"
+            x:160
+            y:67
+        }
+
         source: "TimeDisplayCorner.svg"
-        smooth:true
         MouseArea {
             anchors.fill: parent;
             onClicked: wakeDo.flipped = !wakeDo.flipped
