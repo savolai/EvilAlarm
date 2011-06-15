@@ -23,10 +23,9 @@ Rectangle{
         id: buttonLabel
         x: 26
         y: 20
-        color: "#ffffff"
+        color: "#aaaaaa"
         text: "Alarm:"
-        font.family: "Nokia Sans"
-        font.bold: true
+        font.bold: false
         font.pointSize: 35
         z:1;
     }
@@ -46,10 +45,9 @@ Rectangle{
             id: buttonLabel2
             x: 20
             y: 20
-            color: "#ffffff"
+            color: "#aaaaaa"
             text: "Alarm time:"
-            font.family: "Nokia Sans"
-            font.bold: true
+            font.bold: false
             font.pointSize: 35
             z:1;
         }
