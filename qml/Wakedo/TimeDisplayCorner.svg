@@ -197,9 +197,9 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6"
-     inkscape:cx="164.71992"
-     inkscape:cy="52.704281"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="-48.158476"
+     inkscape:cy="-64.907081"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      width="744.09px"
@@ -231,8 +231,7 @@
      transform="translate(115.44797,-181.11602)">
     <path
        style="color:#000000;fill:#212328;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="M 240.65625 40.375 L 72.4375 152.625 L 240.65625 152.625 L 240.65625 40.375 z "
-       transform="translate(-115.44797,181.11602)"
+       d="m 125.60559,221.68857 -168.343738,112.25 168.218738,0 0.125,-112.25 z"
        id="rect3143" />
     <path
        style="color:#000000;fill:url(#linearGradient2847);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
