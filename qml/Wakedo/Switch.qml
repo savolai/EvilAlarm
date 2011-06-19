@@ -44,6 +44,7 @@ import QtQuick 1.0
 Item {
     id: toggleswitch
     width: background.width; height: background.height
+    property alias knob: knob
 
 //![1]
     property bool on: false
@@ -60,10 +61,10 @@ Item {
 
 //![3]
     function releaseSwitch() {
-        if (knob.x == 1) {
+        if (knob.x == 118) {
             if (toggleswitch.state == "off") return;
         }
-        if (knob.x == 118) {
+        if (knob.x == 1) {
             if (toggleswitch.state == "on") return;
         }
         toggle();
@@ -79,7 +80,7 @@ Item {
 
         Text {
             id: text1
-            x: 147
+            x: 26
             y: 40
             color: "#3e3d3d"
             text: "OFF"
@@ -88,8 +89,8 @@ Item {
 
         Image {
             id: image1
-            x: 34
-            y: 8
+            x: 147
+            y: 9
             fillMode: Image.PreserveAspectFit
             z: 92
             source: "Wakedo.png"
@@ -98,8 +99,8 @@ Item {
 
         Text {
             id: text2
-            x: 39
-            y: 59
+            x: 152
+            y: 60
             color: "#b5b5b5"
             text: "ON"
             visible: true
@@ -113,11 +114,14 @@ Item {
 //![5]
     Image {
         id: knob
-        x: 1; y: 2
+        x: 118; y: 2
+        smooth: false
         visible: true
         source: "metalball2.png"
 
         MouseArea {
+            smooth: false
+            visible: true
             anchors.fill: parent
             drag.target: knob; drag.axis: Drag.XAxis; drag.minimumX: 1; drag.maximumX: 118
             onClicked: toggle()
@@ -130,12 +134,12 @@ Item {
     states: [
         State {
             name: "on"
-            PropertyChanges { target: knob; x: 118 }
+            PropertyChanges { target: knob; x: 1 }
             PropertyChanges { target: toggleswitch; on: true }
         },
         State {
             name: "off"
-            PropertyChanges { target: knob; x: 1 }
+            PropertyChanges { target: knob; x: 118 }
             PropertyChanges { target: toggleswitch; on: false }
         }
     ]
