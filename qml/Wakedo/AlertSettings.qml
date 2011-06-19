@@ -1,9 +1,27 @@
 import QtQuick 1.0
 import "../colibri"
 Rectangle{
+
     property alias hour: spinnerHour.currentIndex
     property alias minute: spinnerMinute.currentIndex
     property alias alarmOn: alarm.on
+
+// an attempt to have minutes padded with zeroes in minute spinner
+/*    property int i;
+
+
+    function initSpinner(){
+        for(i=0;i<60;i++){
+            if(i<10){
+                i="0"+i
+            }
+            minutemodel.append(""+i)
+        }
+        return minutemodel
+    }
+*/
+
+
     onHourChanged: {
         if(!alarm.on){
             alarm.toggle()
