@@ -22,6 +22,9 @@
      <number>0</number>
     </property>
     <item>
+     <layout class="QVBoxLayout" name="layout"/>
+    </item>
+    <item>
      <widget class="QDeclarativeView" name="view" native="true"/>
     </item>
    </layout>
@@ -39,6 +42,8 @@
     <property name="title">
      <string>main</string>
     </property>
+    <addaction name="actionSettings"/>
+    <addaction name="separator"/>
     <addaction name="actionAbout"/>
    </widget>
    <addaction name="menuMain"/>
@@ -46,6 +51,11 @@
   <action name="actionAbout">
    <property name="text">
     <string>About</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
    </property>
   </action>
  </widget>

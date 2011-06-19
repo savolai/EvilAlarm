@@ -1,3 +1,8 @@
+maemo5 {
+    QT += maemo5
+    LIBS += -lalarm
+}
+
 # Add more folders to ship with the application, here
 folder_01.source = qml/Wakedo
 folder_01.target = qml
