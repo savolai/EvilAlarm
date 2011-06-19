@@ -4,7 +4,12 @@ import QtQuick 1.0
 Rectangle{
     width: 800; height: 430
     property bool flipped: false
+    property alias alarmTime: alarmText
+    property alias alarmTimeText: alarmText.text
+    property alias alarm: alarmBox
+    property alias noAlarm: noAlarmText
 
+    //property alias alarmTimeVisible: timeText.visible
     gradient: Gradient {
         GradientStop {
             position: 0.00;
@@ -60,7 +65,7 @@ Rectangle{
         x: 390;
         y: 90;
         //anchors.horizontalCenter: parent.horizontalCenter
-        color: "white"
+        color: "#dddddd"
         font.family: "Nokia Sans"
         font.pixelSize: 100
         style: Text.Raised; styleColor: "grey"
@@ -69,7 +74,7 @@ Rectangle{
         id: noAlarmText
         x: 395;
         y: 220
-        text: "No alarm"
+        text: ""
         visible: true
         //anchors.horizontalCenter: parent.horizontalCenter
         color: "#555"
@@ -113,7 +118,7 @@ Rectangle{
             x: 80
             y: 17
             color: "#c4c4c4"
-            text: "Alarm at 15:03"
+            text: "Alarm at"
             visible: true
             font.pixelSize: 30
         font.family: "Nokia Sans"
