@@ -60,7 +60,7 @@ Item {
         night = ( hours < 7 || hours > 19 )
         minutes = shift ? date.getUTCMinutes() + ((clock.shift % 1) * 60) : date.getMinutes()
         seconds = date.getUTCSeconds();
-        if(hours<10){
+        if(hours>0 && hours<10){
             hoursPadded="0"+hours
         }else{
             hoursPadded=hours
