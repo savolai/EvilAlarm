@@ -34,19 +34,18 @@ Rectangle{
     }
     id: rectangle1
     width: 800; height: 430
-    color: "#2e3442"
     gradient: Gradient {
         GradientStop {
             position: 0.00;
-            color: "#3b3f49";
+            color: "#4b4f59";
         }
         GradientStop {
             position: 0.35;
-            color: "#131313";
+            color: "#232323";
         }
         GradientStop {
             position: 1.00;
-            color: "#131313";
+            color: "#232323";
         }
     }
     border.color: "black"

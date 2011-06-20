@@ -13,15 +13,15 @@ Rectangle{
     gradient: Gradient {
         GradientStop {
             position: 0.00;
-            color: "#3b3f49";
+            color: "#4b4f59";
         }
         GradientStop {
             position: 0.35;
-            color: "#131313";
+            color: "#232323";
         }
         GradientStop {
             position: 1.00;
-            color: "#131313";
+            color: "#232323";
         }
     }
     Clock2{
