@@ -45,6 +45,7 @@ Image {
     property alias delegate: view.delegate
     property alias currentIndex: view.currentIndex
     property real itemHeight: 30
+    opacity: 1
 
     source: "spinner-bg.png"
     clip: true
