@@ -45,7 +45,8 @@ OTHER_FILES += \
     qtc_packaging/debian_fremantle/control \
     qtc_packaging/debian_fremantle/compat \
     qtc_packaging/debian_fremantle/changelog \
-    README
+    README \
+    wakedo-screenshot.png
 
 HEADERS += \
     mainwindow.h
