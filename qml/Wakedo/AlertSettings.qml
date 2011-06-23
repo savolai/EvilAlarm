@@ -73,7 +73,7 @@ Rectangle{
             /// @todo get local date format
             //dateText.text = date.toDateString();
 
-            untilAlarm.text = "Time until alarm:\n"+hoursPadded+" h "+minutesPadded+" min"
+            untilAlarm.text = "Time until alarm:\n"+hoursLeft+" hours "+minutesLeft+" minutes"
         }
         else{
             untilAlarm.text="";
@@ -160,8 +160,8 @@ Rectangle{
 
     Text{
         id: buttonLabel
-        x: 518
-        y: 26
+        x: 508
+        y: 18
         color: "#aaaaaa"
         text: "Alarm:"
         font.bold: false
@@ -170,8 +170,8 @@ Rectangle{
     }
     Switch {
         id:alarmSwitch
-        x: 518
-        y: 92
+        x: 503
+        y: 84
         width: 0
         height: 0
                 on: false;
@@ -185,7 +185,7 @@ Rectangle{
         Text{
             id: buttonLabel2
             x: 77
-            y: 25
+            y: 18
             color: "#aaaaaa"
             text: "Alarm time:"
             font.bold: false
@@ -203,7 +203,7 @@ Rectangle{
         }
 
         Column {
-            y: 90; x: 21; spacing: 40
+            y: 83; x: 21; spacing: 40
 
             Spinner {
                 id: spinnerHour
@@ -216,7 +216,7 @@ Rectangle{
 
         }
         Column {
-            y: 90; x: 251; spacing: 40
+            y: 83; x: 251; spacing: 40
             Spinner {
                 //the following works well otherwise but the spinner breaks:
                 /*MouseArea {
@@ -240,8 +240,8 @@ Rectangle{
 
     Text {
         id: untilAlarm
-        x: 518
-        y: 231
+        x: 508
+        y: 218
         color: "#aaaaaa"
         text: ""
         font.pixelSize: 28
