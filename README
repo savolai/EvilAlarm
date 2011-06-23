@@ -1,4 +1,13 @@
-Bare-essentials, blazing fast, beautiful alarm clock.
+Bare-essentials, blazing fast, graphically and usability tested
+alarm clock.
+
+Features:
+ * a photorealistic vintage alarm clock screen with moving clock hands
+ * a red clock hand indicator to show the alarm time when the alarm is on
+ * animated transitions to create an illusion of turning the app around to set
+   the alarm (somewhat like what you do with a real alarm clock)
+ * usability finesse: when user sets alarm time, alarm is automatically turned
+   on, too, and time until alarm is shown.
 
 The N900 alarm clock is slow. This is probably due to the fact that it
 stores a list of old alarm times, which is completely useless after a
@@ -10,11 +19,3 @@ clock settings like the N900 one does.
 
 Create a more iPhone style flippable clock with just the clock on the front
 side and on the backside configuration for alarm time
-
-Features:
- * a photorealistic vintage alarm clock screen with moving clock hands
- * a red clock hand indicator to show the alarm time when the alarm is on
- * animated transitions to create an illusion of turning the app around to set
-   the alarm (somewhat like what you do with a real alarm clock)
- * usability finesse: when user sets alarm time, alarm is automatically turned
-   on, too, and time until alarm is shown.
