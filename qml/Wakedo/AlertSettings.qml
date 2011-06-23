@@ -242,7 +242,7 @@ Rectangle{
         id: untilAlarm
         x: 508
         y: 218
-        color: "#aaaaaa"
+        color: "#555555"
         text: ""
         font.pixelSize: 28
     }
