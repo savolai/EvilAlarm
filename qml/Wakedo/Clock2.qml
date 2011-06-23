@@ -42,7 +42,7 @@ import QtQuick 1.0
 
 Item {
     id: clock
-    width: 725; height: 430
+    width: 320; height: 430
 
     //property alias city: cityLabel.text
     property int hours
@@ -51,8 +51,21 @@ Item {
     property string secondsPadded
     property string minutesPadded
     property string hoursPadded
+    // time zone shift; not in use
     property real shift: 0
     property bool night: false
+
+    property bool alarmOn
+    property int alarmHours
+    property int alarmMinutes
+
+    onAlarmOnChanged: {
+        if(alarmOn){
+            alarmHand.visible=true
+        }else{
+            alarmHand.visible=false
+        }
+    }
 
     function timeChanged() {
         var date = new Date;
@@ -100,8 +113,10 @@ Item {
     }
 
 
+
     Image {
         x: 154.5; y: 164
+        z:2
         source: "hour.svg"
         smooth: true
         transform: Rotation {
@@ -113,10 +128,27 @@ Item {
             }
         }
     }
+    Image {
+        x: 157.5; y: 170
+        z:3;
+        source: "alarmHand.png"
+        smooth: true
+        visible:false
+        id: alarmHand
+        transform: Rotation {
+            id: alarmHourRotation
+            origin.x: 2.5; origin.y: 80;
+            angle: (clock.alarmHours * 30) + (clock.alarmMinutes* 0.5)
+            Behavior on angle {
+                SpringAnimation { spring: 15; damping: 6; modulus: 360 }
+            }
+        }
+    }
 
     Image {
         x: 156.5; y: 141
         source: "minute.svg"
+        z:2
         smooth: true
         transform: Rotation {
             id: minuteRotation

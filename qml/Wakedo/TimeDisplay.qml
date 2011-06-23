@@ -2,12 +2,13 @@ import QtQuick 1.0
 //import Qt.labs.gestures 1.0
 
 Rectangle{
+    id: rectangle1
     width: 800; height: 430
-    property bool flipped: false
     property alias alarmTime: alarmText
     property alias alarmTimeText: alarmText.text
     property alias alarm: alarmBox
     property alias noAlarm: noAlarmText
+    property alias clock: clock
 
     //property alias alarmTimeVisible: timeText.visible
     gradient: Gradient {
@@ -25,15 +26,17 @@ Rectangle{
         }
     }
     Clock2{
-        anchors.centerIn: parent
+        id:clock
+        x: 30
         MouseArea {
-            onClicked: timeDisplay.flipped = !timeDisplay.flipped
+            onClicked: wakedo.flipped = !wakedo.flipped
             x:0;
             y:0;
             width:320;
             height:430;
         }
     }
+
     // none of this works on n900, will test once can get a hold on a better device
 /*    GestureArea {
         anchors.fill: parent
@@ -92,9 +95,14 @@ Rectangle{
             x:160
             y:67
         }
-
         source: "TimeDisplayCorner.svg"
-
+    }
+    MouseArea {
+        onClicked: wakedo.flipped = !wakedo.flipped
+        anchors.bottom: parent.bottom;
+        anchors.right: parent.right;
+        width:240;
+        height:150;
     }
 
     Rectangle {
