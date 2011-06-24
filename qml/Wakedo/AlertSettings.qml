@@ -73,7 +73,7 @@ Rectangle{
             /// @todo get local date format
             //dateText.text = date.toDateString();
 
-            untilAlarm.text = "Time until alarm:\n"+hoursLeft+" hours "+minutesLeft+" minutes"
+            untilAlarm.text = "Until alarm:\n"+hoursLeft+" hours "+minutesLeft+" minutes"
         }
         else{
             untilAlarm.text="";
