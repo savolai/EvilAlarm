@@ -95,12 +95,12 @@ Rectangle{
     }
     onHourChanged: {
         if(!alarmSwitch.on){
-            alarmSwitch.toggle();
+            alarmSwitch.aswitch.toggle();
         }
     }
     onMinuteChanged: {
         if(!alarmSwitch.on){
-            alarmSwitch.toggle();
+            alarmSwitch.aswitch.toggle();
         }
     }
 
@@ -121,62 +121,17 @@ Rectangle{
     }
     border.color: "black"
 
-    Image{
-        x: 561
-        y: 281
-        anchors.bottom: parent.bottom;
-        anchors.left: parent.left;
-        width:240;
-        height:150;
-        anchors.bottomMargin: -1
-        anchors.leftMargin: 561
-        source: "TimeDisplayCorner.svg"
-        Image{
-            source:"ok.svg"
-            x:164
-            y:95
-            visible: false
-        }
-
-
+    AlarmSwitch{
+        id: alarmSwitch
+        x: 503
+        y: 18
     }
-    MouseArea {
-        onClicked: wakedo.flipped = !wakedo.flipped
+
+    AlarmSettingsCorner{
+        id:alarmSettingsCorner
         anchors.bottom: parent.bottom;
         anchors.right: parent.right;
-        width:240;
-        height:150;
-
-        Text {
-            id: text1
-            x: 171
-            y: 89
-            color: "#aaaaaa"
-            text: "Ok!"
-            font.bold: false
-            font.pixelSize: 36
-        }
     }
-
-    Text{
-        id: buttonLabel
-        x: 508
-        y: 18
-        color: "#aaaaaa"
-        text: "Alarm:"
-        font.bold: false
-        font.pointSize: 35
-        z:1;
-    }
-    Switch {
-        id:alarmSwitch
-        x: 503
-        y: 84
-        width: 0
-        height: 0
-                on: false;
-                z: 0
-        }
 
     Rectangle {
         x: -1
@@ -246,5 +201,6 @@ Rectangle{
         text: ""
         font.pixelSize: 28
     }
+
 
 }

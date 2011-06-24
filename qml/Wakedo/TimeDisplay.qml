@@ -4,11 +4,12 @@ import QtQuick 1.0
 Rectangle{
     id: rectangle1
     width: 800; height: 430
-    property alias alarmTime: alarmText
-    property alias alarmTimeText: alarmText.text
-    property alias alarm: alarmBox
-    property alias noAlarm: noAlarmText
+    property alias alarmTime: timeText.alarmTime
+    property alias alarmTimeText: timeText.alarmTimeText
+    property alias alarm: timeText.alarm
+    property alias noAlarm: timeText.noAlarm
     property alias clock: clock
+    property alias currentTime: timeText.currentTime
 
     //property alias alarmTimeVisible: timeText.visible
     gradient: Gradient {
@@ -58,79 +59,25 @@ Rectangle{
             noAlarmText.text="gesture hot spot"+gesture.hotSpot.x+" "+gesture.hotSpot.y+")"
     }
     */
+
+    TimeText{
+        id:timeText
+        x: 379
+        y: 97
+        width: 420
+        height: 174
+    }
+
+
     // usability test conclusion: clock picture
     // should also serve as trigger for setting alarm
     // it is an alarm clock so it is reasonable that users assume
     // it can be used to access alarm settings
 
-    Text {
-        id: timeText
-        x: 390;
-        y: 90;
-        //anchors.horizontalCenter: parent.horizontalCenter
-        color: "#dddddd"
-        font.family: "Nokia Sans"
-        font.pixelSize: 100
-        style: Text.Raised; styleColor: "grey"
-    }
-    Text {
-        id: noAlarmText
-        x: 395;
-        y: 220
-        text: ""
-        visible: true
-        //anchors.horizontalCenter: parent.horizontalCenter
-        color: "#555"
-        font.family: "Nokia Sans"
-        font.pixelSize: 30
-        //style: Text.Raised; styleColor: "white"
-    }
-    Image{
+    TimeDisplayCorner{
+        id: timeDisplayCorner
         anchors.bottom: parent.bottom;
         anchors.right: parent.right;
-        width:240;
-        height:150;
-        Image{
-            source:"bell.png"
-            x:160
-            y:67
-        }
-        source: "TimeDisplayCorner.svg"
-    }
-    MouseArea {
-        onClicked: wakedo.flipped = !wakedo.flipped
-        anchors.bottom: parent.bottom;
-        anchors.right: parent.right;
-        width:240;
-        height:150;
-    }
-
-    Rectangle {
-        id: alarmBox
-        x: 395
-        y: 203
-        width: 370
-        height: 64
-        color: "#00000000"
-        visible: false
-
-        Image {
-            id: image2
-            x: 0
-            y: 0
-            source: "Wakedo.png"
-        }
-
-        Text {
-            id: alarmText
-            x: 80
-            y: 17
-            color: "#c4c4c4"
-            text: "Alarm at"
-            visible: true
-            font.pixelSize: 30
-        font.family: "Nokia Sans"
-    }
 
     }
 }

@@ -89,7 +89,7 @@ Item {
             secondsPadded=seconds
         }
 
-        timeText.text = hoursPadded +":"+ minutesPadded // SECONDS ARE DISTRACTING? +":"+ secondsPadded
+        currentTime.text = hoursPadded +":"+ minutesPadded // SECONDS ARE DISTRACTING? +":"+ secondsPadded
         // the date was too much
         //dateText.text = date.getDate() +"."+  date.getMonth() +"."+  date.getFullYear();
         /// @todo get local date format
