@@ -1,11 +1,8 @@
 import QtQuick 1.0
 
 Rectangle{
-    id: window
-    width: 800; height: 430
-
     color: "#141518"
-
+    id: window
 
     Row {
         anchors.centerIn: parent; spacing: 0
