@@ -50,10 +50,10 @@ Image {
     source: "spinner-bg.png"
     clip: true
 
+
     PathView {
         id: view
         anchors.fill: parent
-
         pathItemCount: height/itemHeight
         preferredHighlightBegin: 0.5
         preferredHighlightEnd: 0.5

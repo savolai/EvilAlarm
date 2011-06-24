@@ -185,13 +185,31 @@ Rectangle{
                 width: 220; height: 320
                 focus: true
                 model: 60
+
+
                 itemHeight: 60
-                delegate: Text { font.pixelSize: 45;  text: index; height: 60 }
+                delegate: Text {
+                    font.pixelSize: 45;
+                    text: index;
+                    //text: name;
+                    height: 60 }
             }
         }
 
 
     }
+    ListModel { id: minuteModel
+/*        function(){
+                                    for(i=0;i<=60;i++){
+                                        var name=""+i
+                                        if(i<10){
+                                            name="0"+name;
+                                        }
+                                        model.append({'name': name})
+
+                                    }
+                                    return model;
+                                }*/}
 
     Text {
         id: untilAlarm
