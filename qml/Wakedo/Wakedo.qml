@@ -37,20 +37,20 @@ Flipable {
     property bool flipped: false
 
     function showAlarmTime() {
-        timeDisplay.clock.alarmHours=alertSettings.hour;
-        timeDisplay.clock.alarmMinutes=alertSettings.minute;
+        timeDisplay.clock.alarmHours=alarmSettings.hour;
+        timeDisplay.clock.alarmMinutes=alarmSettings.minute;
 
-        timeDisplay.clock.alarmOn=alertSettings.alarmOn;
+        timeDisplay.clock.alarmOn=alarmSettings.alarmOn;
 
-        if(alertSettings.hour>0 && alertSettings.hour<10){
-            alarmHoursPadded="0"+alertSettings.hour
+        if(alarmSettings.hour>0 && alarmSettings.hour<10){
+            alarmHoursPadded="0"+alarmSettings.hour
         }else{
-            alarmHoursPadded=alertSettings.hour
+            alarmHoursPadded=alarmSettings.hour
         }
-        if(alertSettings.minute<10){
-            alarmMinutesPadded="0"+alertSettings.minute
+        if(alarmSettings.minute<10){
+            alarmMinutesPadded="0"+alarmSettings.minute
         }else{
-            alarmMinutesPadded=alertSettings.minute
+            alarmMinutesPadded=alarmSettings.minute
         }
         timeDisplay.alarmTimeText="Alarm at "+alarmHoursPadded+":"+alarmMinutesPadded
 
@@ -58,7 +58,7 @@ Flipable {
 
 
     front: TimeDisplay{id:timeDisplay}
-    back: AlertSettings{id:alertSettings}
+    back: AlarmSettings{id:alarmSettings}
 
 
 
@@ -71,7 +71,7 @@ Flipable {
             // this is negative to make rotation go reverse, i.e. to have paper fold approach user
             angle: -wakedo.angle }
     },State {
-    name: "alarmOn"; when: alertSettings.alarmOn
+    name: "alarmOn"; when: alarmSettings.alarmOn
         StateChangeScript {
             script: showAlarmTime();
         }
@@ -88,14 +88,14 @@ Flipable {
             visible:false
         }
     },State {
-            name: "alarmOff"; when: !alertSettings.alarmOn
+            name: "alarmOff"; when: !alarmSettings.alarmOn
                 StateChangeScript {
                     script: showAlarmTime();
                 }
                 PropertyChanges {
                     target: timeDisplay.noAlarm;
                     // this is negative to make rotation go reverse, i.e. to have paper fold approach user
-                    text: "No alarm" //alertSettings.hour+":"+alertSettings.minute
+                    text: "No alarm" //alarmSettings.hour+":"+alarmSettings.minute
                     visible:true
                 }
             }]

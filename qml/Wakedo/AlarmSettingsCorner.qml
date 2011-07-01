@@ -2,15 +2,22 @@ import QtQuick 1.0
 
 Rectangle {
     id: rectangle1
-    width: 240
+    width: 173
     height: 150
     color: "#00000000"
-    MouseArea {
-        onClicked: wakedo.flipped = !wakedo.flipped
+    Text {
+        color: "#aaaaaa"
+        text: "Ok!"
+        z: 5
+        anchors.rightMargin: 11
+        anchors.bottomMargin: 14
+        font.bold: false
+        font.pixelSize: 36
+        id: text1
+        x: 166
+        y: 93
         anchors.bottom: parent.bottom;
         anchors.right: parent.right;
-        width:240;
-        height:150;
     }
     Image{
         id: image1
@@ -31,13 +38,16 @@ Rectangle {
         }
     }
 
-    Text {
-        id: text1
-        x: 171
-        y: 89
-        color: "#aaaaaa"
-        text: "Ok!"
-        font.bold: false
-        font.pixelSize: 36
+    MouseArea {
+        onClicked: wakedo.flipped = !wakedo.flipped
+        anchors.top: parent.top
+        anchors.topMargin: 0
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: 0
+        anchors.left: parent.left
+        anchors.leftMargin: -4
+        anchors.right: parent.right
+        anchors.rightMargin: -5
     }
+
 }

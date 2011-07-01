@@ -2,15 +2,23 @@
 #include "ui_mainwindow.h"
 #include <QPushButton>
 #include <QLabel>
+#include <QDebug>
+#include <QGraphicsObject>
 #if defined(Q_WS_MAEMO)
 #include <alarmd/alarm_event.h>
 #endif
+
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
     ui->view->setSource(QUrl::fromLocalFile(QLatin1String("qml/Wakedo/main.qml")));
+    QGraphicsObject *item = ui->view->rootObject();
+
+    QObject::connect(item, SIGNAL(selectAlarmType()),
+                     this, SLOT(showSelector()));
 
     /*
     // trying http://doc.qt.nokia.com/qt-maemo-4.6/maemo5-stackedwindows.html
@@ -41,6 +49,10 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+void MainWindow::showSelector() {
+    qDebug() << "Called the C++ slot.";
+    selectAlarmType.show();
 }
 
 

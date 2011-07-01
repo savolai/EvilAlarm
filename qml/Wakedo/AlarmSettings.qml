@@ -1,7 +1,7 @@
 import QtQuick 1.0
 import "../colibri"
 Rectangle{
-    id: alertSettings
+    id: alarmSettings
 
     property alias hour: spinnerHour.currentIndex
     property alias minute: spinnerMinute.currentIndex
@@ -218,6 +218,55 @@ Rectangle{
         color: "#555555"
         text: ""
         font.pixelSize: 28
+    }
+
+    Rectangle {
+        id: changeAlarmType
+        x: 485
+        y: 280
+        width: 124
+        height: 87
+        gradient: Gradient {
+            GradientStop {
+                position: 0
+                color: "#161616"
+            }
+
+            GradientStop {
+                position: 1
+                color: "#3a3e69"
+            }
+        }
+
+        MouseArea {
+            id: mouse_area1
+            onClicked: window.selectAlarmType()
+            x: 0
+            y: 0
+            width: 90
+            height: 41
+            transformOrigin: Item.TopLeft
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 0
+            anchors.right: parent.right
+            anchors.rightMargin: 0
+            anchors.left: parent.left
+            anchors.leftMargin: 0
+            anchors.top: parent.top
+            anchors.topMargin: 0
+        }
+
+        Text {
+            id: text1
+            x: -12
+            y: 6
+            width: 148
+            color: "#aaaaaa"
+            text: "Normal alarm"
+            horizontalAlignment: Text.AlignHCenter
+            wrapMode: Text.WordWrap
+            font.pixelSize: 28
+        }
     }
 
 

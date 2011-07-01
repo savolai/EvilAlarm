@@ -32,7 +32,8 @@ symbian:TARGET.UID3 = 0xEEC1EAC8
 
 # The .cpp file which was generated for your project. Feel free to hack it.
 SOURCES += main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    selectalarmtype.cpp
 
 # Please do not modify the following two lines. Required for deployment.
 include(qmlapplicationviewer/qmlapplicationviewer.pri)
@@ -55,7 +56,9 @@ OTHER_FILES += \
     qtc_packaging/debian_harmattan/changelog
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    selectalarmtype.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    selectalarmtype.ui
