@@ -228,13 +228,16 @@ Rectangle{
         height: 87
         gradient: Gradient {
             GradientStop {
-                position: 0
-                color: "#161616"
+                position: 0.00;
+                color: "#4b4f59";
             }
-
             GradientStop {
-                position: 1
-                color: "#3a3e69"
+                position: 0.6;
+                color: "#232323";
+            }
+            GradientStop {
+                position: 1.00;
+                color: "#232323";
             }
         }
 
