@@ -12,11 +12,13 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     ui->view->setSource(QUrl::fromLocalFile(QLatin1String("qml/Wakedo/main.qml")));
 
+    /*
     // trying http://doc.qt.nokia.com/qt-maemo-4.6/maemo5-stackedwindows.html
     button1.setText("About");
     //ui->layout->addWidget(&button1);
     ("Click here to open a new stacked window");
     QPushButton button1("Click here to open a new stacked window");
+    //not compatible with harmattan
     button1.setAttribute(Qt::WA_Maemo5StackedWindow);
 
     QPushButton button2("Click here to open another stacked window", &button1);
@@ -31,7 +33,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     QObject::connect(&button1, SIGNAL(clicked()), &button2, SLOT(show()));
     QObject::connect(&button2, SIGNAL(clicked()), &label, SLOT(show()));
-
+*/
     //button1.show();
     //setAttribute(Qt::WA_Maemo5LandscapeOrientation, true);
 }
