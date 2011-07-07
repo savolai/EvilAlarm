@@ -222,22 +222,24 @@ Rectangle{
 
     Rectangle {
         id: changeAlarmType
-        x: 485
-        y: 280
+        x: 503
+        y: 312
         width: 124
         height: 87
         gradient: Gradient {
             GradientStop {
-                position: 0.00;
-                color: "#4b4f59";
+                position: 0
+                color: "#4b4f59"
             }
+
             GradientStop {
-                position: 0.6;
-                color: "#232323";
+                position: 0.91
+                color: "#232323"
             }
+
             GradientStop {
-                position: 1.00;
-                color: "#232323";
+                position: 1
+                color: "#232323"
             }
         }
 
