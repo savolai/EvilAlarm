@@ -285,18 +285,18 @@ Rectangle{
             id: mouse_area2
             x: 244
             y: 0
-            width: 238
+            width: 283
             height: 62
             anchors.verticalCenterOffset: 0
             anchors.verticalCenter: parent.verticalCenter
             Text {
                 id: text2
-                x: 35
-                y: 9
+                x: 58
+                y: 13
                 width: 168
                 height: 62
                 color: "#4f4f4f"
-                text: "Alarm history >"
+                text: "Previous alarms >"
                 style: Text.Raised
                 anchors.verticalCenterOffset: 13
                 anchors.verticalCenter: parent.verticalCenter
