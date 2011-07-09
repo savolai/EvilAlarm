@@ -129,6 +129,7 @@ Rectangle{
 
     AlarmSettingsCorner{
         id:alarmSettingsCorner
+        z: 3
         anchors.bottom: parent.bottom;
         anchors.right: parent.right;
     }
@@ -162,7 +163,7 @@ Rectangle{
 
             Spinner {
                 id: spinnerHour
-                width: 220; height: 320
+                width: 220; height: 275
                 focus: true
                 model: 24
                 itemHeight: 60
@@ -182,7 +183,7 @@ Rectangle{
                     }
                 }*/
                 id: spinnerMinute
-                width: 220; height: 320
+                width: 220; height: 275
                 focus: true
                 model: 60
 
@@ -222,14 +223,14 @@ Rectangle{
 
     Rectangle {
         id: changeAlarmType
-        x: 503
-        y: 312
-        width: 124
-        height: 87
+        x: -1
+        y: 368
+        width: 713
+        height: 62
         gradient: Gradient {
             GradientStop {
                 position: 0
-                color: "#4b4f59"
+                color: "#19191c"
             }
 
             GradientStop {
@@ -248,29 +249,62 @@ Rectangle{
             onClicked: window.selectAlarmType()
             x: 0
             y: 0
-            width: 90
-            height: 41
+            width: 244
+            height: 54
             transformOrigin: Item.TopLeft
             anchors.bottom: parent.bottom
             anchors.bottomMargin: 0
             anchors.right: parent.right
-            anchors.rightMargin: 0
+            anchors.rightMargin: 469
             anchors.left: parent.left
             anchors.leftMargin: 0
             anchors.top: parent.top
             anchors.topMargin: 0
+
+            Text {
+                id: text1
+                x: 9
+                y: 8
+                width: 239
+                height: 44
+                color: "#4f4f4f"
+                text: "Normal alarm >"
+                anchors.horizontalCenterOffset: 7
+                font.italic: false
+                style: Text.Raised
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenterOffset: 3
+                anchors.verticalCenter: parent.verticalCenter
+                horizontalAlignment: Text.AlignHCenter
+                wrapMode: Text.NoWrap
+                font.pixelSize: 28
+            }
         }
 
-        Text {
-            id: text1
-            x: -12
-            y: 6
-            width: 148
-            color: "#aaaaaa"
-            text: "Normal alarm"
-            horizontalAlignment: Text.AlignHCenter
-            wrapMode: Text.WordWrap
-            font.pixelSize: 28
+        MouseArea {
+            id: mouse_area2
+            x: 244
+            y: 0
+            width: 238
+            height: 62
+            anchors.verticalCenterOffset: 0
+            anchors.verticalCenter: parent.verticalCenter
+            Text {
+                id: text2
+                x: 35
+                y: 9
+                width: 168
+                height: 62
+                color: "#4f4f4f"
+                text: "Alarm history >"
+                style: Text.Raised
+                anchors.verticalCenterOffset: 13
+                anchors.verticalCenter: parent.verticalCenter
+                font.pixelSize: 28
+                wrapMode: Text.NoWrap
+                horizontalAlignment: Text.AlignHCenter
+            }
+            transformOrigin: Item.TopLeft
         }
     }
 

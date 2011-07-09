@@ -29,12 +29,14 @@ Rectangle{
     Clock2{
         id:clock
         x: 30
+        z: 3
         MouseArea {
             onClicked: wakedo.flipped = !wakedo.flipped
             x:0;
             y:0;
             width:320;
             height:430;
+            z: 0
         }
     }
 
@@ -76,8 +78,33 @@ Rectangle{
 
     TimeDisplayCorner{
         id: timeDisplayCorner
+        z: 3
         anchors.bottom: parent.bottom;
         anchors.right: parent.right;
 
+    }
+
+    Rectangle {
+        id: changeAlarmType
+        x: 0
+        y: 368
+        width: 713
+        height: 62
+        gradient: Gradient {
+            GradientStop {
+                position: 0
+                color: "#19191c"
+            }
+
+            GradientStop {
+                position: 0.91
+                color: "#232323"
+            }
+
+            GradientStop {
+                position: 1
+                color: "#232323"
+            }
+        }
     }
 }
