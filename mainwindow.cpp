@@ -14,7 +14,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    ui->view->setSource(QUrl::fromLocalFile(QLatin1String("qml/Wakedo/main.qml")));
+    QString path=QApplication::applicationDirPath()+"/qml/Wakedo/main.qml";
+    //bool r = QDesktopServices::openUrl(QUrl::fromLocalFile(path));
+    ui->view->setSource(QUrl::fromLocalFile(path));
     QGraphicsObject *item = ui->view->rootObject();
 
     QObject::connect(item, SIGNAL(selectAlarmType()),
@@ -56,15 +58,11 @@ void MainWindow::showSelector() {
 }
 
 
-void MainWindow::setAlarm(int hours,int minutes){
+/*void MainWindow::setAlarm(int hours,int minutes){
     // from http://www.tardigrada.hr/blog/2010/10/using-maemos-alarm-framework-with-qt-the-basics/
 
-    // Header stuff...
 
-
-    // Other code...
-
-        /*alarm_event_t * event = 0;
+        alarm_event_t * event = 0;
         alarm_action_t * act = 0;
 
         // Setup
@@ -95,10 +93,9 @@ void MainWindow::setAlarm(int hours,int minutes){
         act = 0;
         event = 0;
 
-    // More other code...
-*/
-}
 
+}
+*/
 void MainWindow::on_actionSettings_triggered()
 {
 

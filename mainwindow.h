@@ -15,7 +15,7 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-    void setAlarm(int hours,int minutes);
+    //void setAlarm(int hours,int minutes);
 
 public slots:
     void showSelector();
