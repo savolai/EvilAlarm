@@ -174,6 +174,17 @@ Rectangle{
         Column {
             y: 83; x: 251; spacing: 40
             Spinner {
+                id: spinnerMinute
+                width: 220; height: 275
+                focus: true
+                model: 60
+                itemHeight: 60
+                delegate: Text {
+                    font.pixelSize: 45;
+                    text: index;
+                    //text: name;
+                    height: 60
+                }
                 //the following works well otherwise but the spinner breaks:
                 /*MouseArea {
                     anchors.fill: parent
@@ -182,18 +193,7 @@ Rectangle{
                         alarm.on=true
                     }
                 }*/
-                id: spinnerMinute
-                width: 220; height: 275
-                focus: true
-                model: 60
 
-
-                itemHeight: 60
-                delegate: Text {
-                    font.pixelSize: 45;
-                    text: index;
-                    //text: name;
-                    height: 60 }
             }
         }
 
@@ -267,7 +267,7 @@ Rectangle{
                 y: 8
                 width: 239
                 height: 44
-                color: "#4f4f4f"
+                color: "#626262"
                 text: "Normal alarm >"
                 anchors.horizontalCenterOffset: 7
                 font.italic: false
@@ -295,7 +295,7 @@ Rectangle{
                 y: 13
                 width: 168
                 height: 62
-                color: "#4f4f4f"
+                color: "#626262"
                 text: "Previous alarms >"
                 style: Text.Raised
                 anchors.verticalCenterOffset: 13
