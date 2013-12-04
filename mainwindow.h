@@ -3,7 +3,7 @@
 #include <QPushButton>
 #include <QMainWindow>
 #include "selectalarmtype.h"
-
+//testi
 namespace Ui {
     class MainWindow;
 }
