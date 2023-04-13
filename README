@@ -1,3 +1,6 @@
+2023: Fixed to run in Qt 5.15. 
+To run this in Qt Creator, turn off shadow directories.
+
 Bare-essentials, blazing fast, graphically and usability tested
 alarm clock.
 
