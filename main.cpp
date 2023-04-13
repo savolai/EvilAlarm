@@ -1,6 +1,6 @@
-#include <QtGui/QApplication>
-#include "qmlapplicationviewer.h"
+#include <QApplication>
 #include "mainwindow.h"
+#include "qmlapplicationviewer.h"
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);

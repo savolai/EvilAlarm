@@ -1,9 +1,12 @@
 #include "mainwindow.h"
-#include "ui_mainwindow.h"
-#include <QPushButton>
-#include <QLabel>
 #include <QDebug>
 #include <QGraphicsObject>
+#include <QLabel>
+#include <QPushButton>
+#include <QQmlComponent>
+#include <QQmlEngine>
+#include <QQuickView>
+#include "ui_mainwindow.h"
 #if defined(Q_WS_MAEMO)
 #include <alarmd/alarm_event.h>
 #endif
@@ -14,13 +17,20 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QString path=QApplication::applicationDirPath()+"/qml/Wakedo/main.qml";
+    QString path = QApplication::applicationDirPath() + "/../qml/Wakedo/main.qml";
     //bool r = QDesktopServices::openUrl(QUrl::fromLocalFile(path));
     ui->view->setSource(QUrl::fromLocalFile(path));
-    QGraphicsObject *item = ui->view->rootObject();
+    //QGraphicsObject *item = ui->view->rootObject();
+    QQuickView view(QUrl::fromLocalFile(path));
+    QQmlEngine engine;
+    QQmlComponent component(&engine, QUrl(path));
+    QObject *object = component.create();
+    //QObject *item = view.rootObject();
+    QObject *qmlObject = object->findChild<
+        QObject *>(); // Assumes that the signal is defined in the top-level item of the QML file
+    ui->view->setResizeMode(QQuickWidget::SizeRootObjectToView);
 
-    QObject::connect(item, SIGNAL(selectAlarmType()),
-                     this, SLOT(showSelector()));
+    QObject::connect(qmlObject, SIGNAL(selectAlarmType()), this, SLOT(showSelector()));
 
     /*
     // trying http://doc.qt.nokia.com/qt-maemo-4.6/maemo5-stackedwindows.html

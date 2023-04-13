@@ -1,0 +1,11 @@
+
+debug/*
+.qmake.stash
+Makefile
+Makefile.Debug
+Makefile.Release
+ui_mainwindow.h
+ui_selectalarmtype.h
+Wakedo.pro.user
+Wakedo.pro.user.3.0-pre1
+Wakedo.pro.user
