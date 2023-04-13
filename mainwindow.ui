@@ -11,7 +11,10 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Wakedo</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="user-idle"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -33,35 +36,6 @@
     </item>
    </layout>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>800</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menuMain">
-    <property name="title">
-     <string>main</string>
-    </property>
-    <addaction name="actionSettings"/>
-    <addaction name="separator"/>
-    <addaction name="actionAbout"/>
-   </widget>
-   <addaction name="menuMain"/>
-  </widget>
-  <action name="actionAbout">
-   <property name="text">
-    <string>About</string>
-   </property>
-  </action>
-  <action name="actionSettings">
-   <property name="text">
-    <string>Settings</string>
-   </property>
-  </action>
  </widget>
  <customwidgets>
   <customwidget>
